@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лучшие сотрудники и продажи</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<h1>Результаты аналитики</h1>
+
+<section>
+    <h2>1. Лучшие сотрудники</h2>
+    <table border="1" id="top-employees-table">
+        <thead>
+        <tr>
+            <th>ФИО</th>
+            <th>Должность</th>
+            <th>Пол</th>
+            <th>Кол-во продаж</th>
+            <th>Сумма продаж</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+
+<section>
+    <h2>2. Лучшие сотрудники по должности и типу товара</h2>
+
+    <form id="top-sellers-form">
+        <label>Должность:
+            <input type="text" id="position-input" required>
+        </label>
+        <label>Тип товара:
+            <input type="text" id="type-input" required>
+        </label>
+        <button type="submit">Показать</button>
+    </form>
+
+    <table border="1" id="top-sellers-table">
+        <thead>
+        <tr>
+            <th>ФИО</th>
+            <th>Должность</th>
+            <th>Пол</th>
+            <th>Кол-во продаж</th>
+            <th>Сумма продаж</th>
+            <th>Тип товара</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+
+<section>
+    <h2>3. Доход с оплат наличными</h2>
+    <div id="cash-income"></div>
+</section>
+
+<section>
+    <h2>Загрузка ZIP с CSV-файлами</h2>
+    <form id="upload-form">
+        <input type="file" id="zip-file" accept=".zip" required />
+        <button type="submit">Загрузить</button>
+    </form>
+    <div id="upload-status"></div>
+</section>
+</body>
+</html>
